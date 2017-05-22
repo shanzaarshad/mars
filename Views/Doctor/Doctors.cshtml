@@ -1,0 +1,213 @@
+﻿@model List<MvcApplication1.Models.Doctor>
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    
+        
+    <title>Mars-Admin </title>
+    
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+     
+   
+</head>
+<body>
+    <div class="background">
+    <!-- HEADER END-->
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="~/Home/Index">
+
+                    <img class="logostyle" src="~/Images/logo1.png" />
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- LOGO HEADER END-->
+	
+	
+	
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a  href="~/Home/Index">Dashboard</a></li>
+                            <li><a class="menu-top-active" href="~/Doctor/Doctors" >Doctors</a></li>
+                            <li><a href="~/Patient/UserPatient">Users & patients</a></li>
+                            <li><a href="~/Patient/MedicalRecords">Medical Records</a></li>
+                            <li><a href="~/Account/logout">Logout</a></li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="second-page-head-line">Doctors</h4>
+
+                </div>
+
+            </div>
+           
+		   <div >		  
+				<a href="~/Doctor/AddDoctor">
+					<button class="btn btn-primary btn-lg" >
+						<i class="fa fa-plus"></i>
+						  Add  Doctor
+					</button>
+				</a>
+			</div>
+			<br><br>
+			
+			
+           
+                <!--    Context Classes  -->
+                    <div class="panel panel-default">
+                       
+                        <div class="panel-heading">
+                           Doctors
+                        </div>
+
+                        
+                        <div >
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Name</th>
+
+                                            <th>Visiting Address Morning</th>
+                                            <th>Visiting Address Afternoon</th>
+                                            <th>Specialization</th>
+                                            <th>Designation</th>
+                                            <th>Qualification</th>
+                                            <th>Contact number</th>
+                                            <th>Email</th>
+                                            <th></th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (var x in Model)
+                                        {
+
+                                            <tr class="success">
+
+                                                <td>@x.FirstName @x.MiddleName @x.LastName</td>
+
+                                                <td>@x.VisitingAddressMorning</td>
+                                                <td>@x.VisitingAddressAfternoon</td>
+                                                <td>@x.Specialization</td>
+                                                <td>@x.Designation</td>
+                                                <td>@x.Qualification</td>
+                                                <td>@x.PhoneNo</td>
+                                                <td>@x.Email</td>
+
+                                                <td>
+
+                                                    <a href="~/Doctor/EditDoctor?id=@x.Id"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button></a>
+                                                    <a href="~/Doctor/DelDr?id=@x.Id"><button class="btn btn-danger"><i class="fa fa-pencil"></i> Delete</button></a>
+                                                </td>
+                                            </tr>
+
+                                        }
+                                        @*<tr class="info">
+                    <td>2</td>
+                    <td>Zafar Iqbal</td>
+                    <td>Cardiologist</td>
+                    <td>Sh. zaid Hospital Lahore</td>
+                    <td>0900 78601</td>
+                    <td>zafariqbal@gmail.com</td>
+                    <td> 9:00 am to 1:00 pm </td>
+                    <td>
+
+                    <a href="EditDoctor.html"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button></a>
+                    <a href="Doctors.html"><button class="btn btn-danger"><i class="fa fa-pencil"></i> Delete</button></a>
+                    </td>
+                </tr>
+                <tr class="warning">
+                    <td>3</td>
+                    <td>Zafar Iqbal</td>
+                    <td>Cardiologist</td>
+                    <td>Sh. zaid Hospital Lahore</td>
+                    <td>0900 78601</td>
+                    <td>zafariqbal@gmail.com</td>
+                    <td> 9:00 am to 1:00 pm </td>
+                    <td>
+
+                    <a href="EditDoctor.html"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button></a>
+                    <a href="Doctors.html"><button class="btn btn-danger"><i class="fa fa-pencil"></i> Delete</button></a>
+                    </td>
+
+                </tr>
+                <tr class="danger">
+                    <td>4</td>
+                    <td>Zafar Iqbal</td>
+                    <td>Cardiologist</td>
+                    <td>Sh. zaid Hospital Lahore</td>
+                    <td>0900 78601</td>
+                    <td>zafariqbal@gmail.com</td>
+                    <td> 9:00 am to 1:00 pm </td>
+                    <td>
+
+                    <a href="EditDoctor.html"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button></a>
+                    <a href="Doctors.html"><button class="btn btn-danger"><i class="fa fa-pencil"></i> Delete</button></a>
+                    </td>
+
+                </tr>*@
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--  end  Context Classes  -->
+           
+            
+               
+				
+            </div>
+        </div>
+    
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                     Google Play Store-><a href="http://www.designbootstrap.com/" target="_blank">MARS-Medical Records System</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    
+	
+	
+        <!-- CORE JQUERY SCRIPTS -->
+        <script src="~/Scripts/jquery-1.11.1.js"></script>
+        <!-- BOOTSTRAP SCRIPTS  -->
+        <script src="~/Scripts/bootstrap.js"></script>
+</div>
+</body>
+</html>

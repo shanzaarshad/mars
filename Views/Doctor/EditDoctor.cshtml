@@ -1,0 +1,149 @@
+﻿@model MvcApplication1.Models.Doctor
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+            
+    <title>Mars-Admin </title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+     
+   
+</head>
+<body>
+    <div class="background">
+    <!-- HEADER END-->
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="~/Home/Index">
+
+                    <img class="logostyle" src="~/Images/logo1.png" />
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- LOGO HEADER END-->
+	
+	
+	
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a  href="~/Home/Index">Dashboard</a></li>
+                            <li><a class="menu-top-active" href="~/Doctor/Doctors">Doctors</a></li>
+                            <li><a href="~/Patient/UserPatient">Users & patients</a></li>
+                            <li><a href="~/Patient/MedicalRecords">Medical Records</a></li>
+                            <li><a href="~/Account/logout">Logout</a></li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="second-page-head-line"> Edit Doctor</h4>
+
+                </div>
+
+            </div>
+           
+		   
+			<div class="formpanel">
+                <form role="form" method="post" action="~/Doctor/EditDr">
+                    @Html.HiddenFor(x => x.Id)
+                    <div class="form-group has-error">
+                        <label class="control-label" for="error">First Name</label>
+                        <input type="text" class="form-control" id="error"  name="FirstName"  value="@Model.FirstName"/>
+                    </div>
+                    <div class="form-group has-error">
+                        <label class="control-label" for="error">Middle Name</label>
+                        <input type="text" class="form-control" id="error"  name="MiddleName" value="@Model.MiddleName"/>
+                    </div>
+                    <div class="form-group has-error">
+                        <label class="control-label" for="error">Last Name</label>
+                        <input type="text" class="form-control" id="error"  name="LastName" value="@Model.LastName"/>
+                    </div>
+                    <div class="form-group has-error">
+                        <label class="control-label" for="error">Visiting Address Morning</label>
+                        <input type="text" class="form-control" id="error" name="VisitingAddressMorning" value="@Model.VisitingAddressMorning" />
+                    </div>
+                    <div class="form-group has-error">
+                        <label class="control-label" for="error">Visitng Address Afternoon</label>
+                        <input type="text" class="form-control" id="error" name="VisitingAddressAfternoon" value="@Model.VisitingAddressAfternoon"/>
+                    </div>
+                    <div class="form-group has-error">
+                        <label class="control-label" for="error">Specialization</label>
+                        <input type="text" class="form-control" id="error" name="Specialization" value="@Model.Specialization"/>
+                    </div>
+                    <div class="form-group has-error">
+                        <label class="control-label" for="error">Designation</label>
+                        <input type="text" class="form-control" id="error" name="Designation" value="@Model.Designation"/>
+                    </div>
+                    <div class="form-group has-error">
+                        <label class="control-label" for="error">Qualification</label>
+                        <input type="text" class="form-control" id="error" name="Qualification" value="@Model.Qualification"/>
+                    </div>
+                    <div class="form-group has-error">
+                        <label class="control-label" for="warning">Email Id</label>
+                        <input type="text" class="form-control" id="error" name="Email" value="@Model.Email"/>
+                    </div>
+
+                    <div class="form-group has-error">
+                        <label class="control-label" for="error">Contact Number</label>
+                        <input type="text" class="form-control" id="error" name="PhoneNo" value="@Model.PhoneNo"/>
+                    </div>
+
+                    <div>
+                        <input type="submit" class="btn btn-primary btn-lg centrebtn" name="update" value="Update Doctor" />
+
+                    </div>
+                    <br><br>
+                </form>
+                            <hr />
+							
+			</div>
+		  
+				
+            </div>
+        </div>
+    
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                     Google Play Store-><a href="http://www.designbootstrap.com/" target="_blank">MARS-Medical Records System</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    
+	
+	
+        <!-- CORE JQUERY SCRIPTS -->
+        <script src="~/Scripts/jquery-1.11.1.js"></script>
+        <!-- BOOTSTRAP SCRIPTS  -->
+        <script src="~/Scripts/bootstrap.js"></script>
+</div>
+</body>
+</html>
