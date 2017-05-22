@@ -1,0 +1,111 @@
+﻿@model MvcApplication1.Models.Admin
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+        
+    <title>MARS-Admin</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+     
+</head>
+<body>
+
+    <div class="background">
+    <!-- HEADER END-->
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="~/Home/Index">
+
+                    <img class="logostyle" src="~/Images/logo1.png" />
+                </a>
+
+            </div>
+
+            <div class="left-div">
+                <i class="fa " ></i>
+			</div>
+            </div>
+        </div>
+    <!-- LOGO HEADER END-->
+   
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="second-page-head-line">Login to Admin Panel </h4>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                   
+                    <br>
+                    <form role="form" method="post" action="loginverify">
+                        <label>Enter UserName : </label>
+                        <input type="text" class="form-control" name="username" placeholder="username" id="username"/>
+                        <label>Enter Password :  </label>
+                        <input type="password" class="form-control" name="password" placeholder="password" id="password"/>
+                        <hr />
+                        @*<a href="~/Home/Index" class="btn btn-info"><span class="glyphicon glyphicon-user"></span> &nbsp;Log Me In </a>&nbsp;*@
+                        <input type="submit" class="btn btn-basic btn-block"   name="update" value="Login" />
+                    </form>
+                </div>
+				<div class="col-md-6">
+                    <div class="alert alert-info">
+                        Admin Panel to the android application named "MARS". 
+						MARS – Medical Records System is an Android Application that provides 
+						the general population with the option to store all their medical data inside their cell phones. 
+						No more haggling with bundles of hard copy data, everything you need is right here just an app away!
+                        <br />
+                         <strong> Some of its features are given below :</strong>
+                        <ul>
+                            <li>
+                                Storing Medical History
+                            </li>
+                            <li>
+                                Storing Medical Recpords
+                            </li>
+                            <li>
+                                Searching doctors within Lahore
+                            </li>
+                            
+                        </ul>
+                       
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    Google Play Store-><a href="Mars-App link " target="_blank">MARS-Medical Records System</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+        <!-- CORE JQUERY SCRIPTS -->
+        <script src="~/Scripts/jquery-1.11.1.js"></script>
+        <!-- BOOTSTRAP SCRIPTS  -->
+        <script src="~/Scripts/bootstrap.js"></script>
+	
+	</div>
+</body>
+</html>

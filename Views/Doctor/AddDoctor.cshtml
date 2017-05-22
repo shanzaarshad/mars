@@ -1,0 +1,157 @@
+﻿@model MvcApplication1.Models.Doctor
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    
+        
+    <title>Mars-Admin </title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+     
+   
+</head>
+<body>
+    <div class="background">
+    <!-- HEADER END-->
+    <div class="navbar navbar-inverse set-radius-zero">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="~/Home/Index">
+
+                    <img class="logostyle" src="~/Images/logo1.png" />
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- LOGO HEADER END-->
+	
+	
+	
+    <section class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="~/Home/Index">Dashboard</a></li>
+                            <li><a class="menu-top-active" href="~/Doctor/Doctors" >Doctors</a></li>
+                            <li><a href="~/Patient/UserPatient">Users & patients</a></li>
+                            <li><a href="~/Patient/MedicalRecords">Medical Records</a></li>
+                            <li><a href="~/Account/logout">Logout</a></li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="second-page-head-line"> Add Doctor</h4>
+
+                </div>
+
+            </div>
+           
+		   
+			<div class="formpanel">
+                            <form role="form" method="post" action="~/Doctor/AddDr">
+                                
+                                        <div class="form-group has-error">
+                                            <label class="control-label" for="error">First Name</label>
+                                            <input type="text" class="form-control" id="error" placeholder="First Name" name="FirstName" />
+                                        </div>
+                                        <div class="form-group has-error">
+                                            <label class="control-label" for="error">Middle Name</label>
+                                            <input type="text" class="form-control" id="error" placeholder="Middle Name" name="MiddleName" />
+                                        </div>
+                                        <div class="form-group has-error">
+                                            <label class="control-label" for="error">Last Name</label>
+                                            <input type="text" class="form-control" id="error" placeholder="Last Name" name="LastName" />
+                                        </div> 
+                                        <div class="form-group has-error">
+                                            <label class="control-label" for="error">Visiting Address Morning</label>
+                                            <input type="text" class="form-control" id="error" placeholder="Clinic/Office Address morning" name="VisitingAddressMorning" />
+                                        </div> 
+                                        <div class="form-group has-error">
+                                            <label class="control-label" for="error">Visitng Address Afternoon</label>
+                                            <input type="text" class="form-control" id="error" placeholder="Clinic/Office Address afternoon" name="VisitingAddressAfternoon" />
+                                        </div>
+										<div class="form-group has-error">
+                                            <label class="control-label" for="error">Specialization</label>
+                                            <input type="text" class="form-control" id="error" placeholder="Specialization" name="Specialization"/>
+                                        </div>
+                                        <div class="form-group has-error">
+                                            <label class="control-label" for="error">Designation</label>
+                                            <input type="text" class="form-control" id="error" placeholder="designation" name="Designation" />
+                                        </div>
+                                        <div class="form-group has-error">
+                                            <label class="control-label" for="error">Qualification</label>
+                                            <input type="text" class="form-control" id="error" placeholder="qualification" name="Qualification" />
+                                        </div>
+                                        <div class="form-group has-error">
+                                            <label class="control-label" for="warning">Email Id</label>
+                                            <input type="text" class="form-control" id="error" placeholder="Email Address" name="Email"/>
+                                        </div>
+										
+										<div class="form-group has-error">
+                                            <label class="control-label" for="error">Contact Number</label>
+                                            <input type="text" class="form-control" id="error" placeholder="Contact Number" name="PhoneNo"/>
+                                        </div>
+                                        
+										<div >		  
+                                            <input type="submit" class="btn btn-primary btn-lg centrebtn" name="update" value="Add Doctor" />
+			
+										</div>
+										<br><br>
+                            </form>
+                            <hr />
+							
+			</div>
+			
+			
+			
+           
+                
+           
+            
+               
+				
+            </div>
+        </div>
+    
+    <!-- CONTENT-WRAPPER SECTION END-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                     Google Play Store-><a href="http://www.designbootstrap.com/" target="_blank">MARS-Medical Records System</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END-->
+    
+	
+	
+        <!-- CORE JQUERY SCRIPTS -->
+        <script src="~/Scripts/jquery-1.11.1.js"></script>
+        <!-- BOOTSTRAP SCRIPTS  -->
+        <script src="~/Scripts/bootstrap.js"></script>
+</div>
+</body>
+</html>
