@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a97e755c52534fe4b168c4b2ebeaf306" Name="Diagram1" ZoomLevel="105">
+        <EntityTypeShape EntityType="MARSModel.Admin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MARSModel.Doctor" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="MARSModel.Patient" Width="1.5" PointX="3" PointY="4.875" />
+        <EntityTypeShape EntityType="MARSModel.User" Width="1.5" PointX="0.75" PointY="5.125" />
+        <EntityTypeShape EntityType="MARSModel.Category" Width="1.5" PointX="5.75" PointY="1.5" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_AH" Width="1.5" PointX="9.5" PointY="10.875" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_AH1" Width="1.5" PointX="7.625" PointY="17.875" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_CH" Width="1.5" PointX="14" PointY="5.25" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_CH1" Width="1.5" PointX="14.125" PointY="12.125" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_CH10" Width="1.5" PointX="11.875" PointY="5.25" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_CH2" Width="1.5" PointX="9.75" PointY="5.125" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_CH3" Width="1.5" PointX="1.125" PointY="19.625" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_CH4" Width="1.5" PointX="0.75" PointY="15.375" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_CH5" Width="1.5" PointX="5.5" PointY="5" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_CH6" Width="1.5" PointX="7.5" PointY="5.125" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_CH7" Width="1.5" PointX="5.125" PointY="15.75" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_CH8" Width="1.5" PointX="7.125" PointY="9.5" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_CH9" Width="1.5" PointX="9.5" PointY="13.25" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_EC" Width="1.5" PointX="9.5" PointY="16.5" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_PD" Width="1.5" PointX="4.5" PointY="18.75" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_PH" Width="1.5" PointX="7.125" PointY="13.125" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_PH1" Width="1.5" PointX="0.75" PointY="7.5" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_PH2" Width="1.5" PointX="5" PointY="9.625" />
+        <EntityTypeShape EntityType="MARSModel.MP_DB_PH3" Width="1.5" PointX="11.75" PointY="11.25" />
+        <EntityTypeShape EntityType="MARSModel.Pdf" Width="1.5" PointX="10.625" PointY="1.125" />
+        <EntityTypeShape EntityType="MARSModel.Record" Width="1.5" PointX="8" PointY="0.75" />
+        <AssociationConnector Association="MARSModel.FK__Category__Catego__160F4887" ManuallyRouted="true" >
+          <ConnectorPoint PointX="4.5" PointY="4.875" />
+          <ConnectorPoint PointX="4.875" PointY="4.5" />
+          <ConnectorPoint PointX="5.6813526115921071" PointY="4.5" />
+          <ConnectorPoint PointX="5.6813526115921071" PointY="3.816791927083333" />
+          <ConnectorPoint PointX="6.5" PointY="3.816791927083333" />
+          <ConnectorPoint PointX="6.5" PointY="3.4802864583333331" />
+        </AssociationConnector>
+        <AssociationConnector Association="MARSModel.FK__Record__Catergor__2CF2ADDF" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_AH__Patien__37703C52" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_AH1__Patie__3A4CA8FD" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_CH__Patien__31B762FC" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_CH1__Patie__3D2915A8" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_CH1__Patie__681373AD" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_CH2__Patie__489AC854" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_CH3__Patie__4B7734FF" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_CH4__Patie__4E53A1AA" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_CH5__Patie__58D1301D" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_CH6__Patie__5CA1C101" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_CH7__Patie__5F7E2DAC" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_CH8__Patie__625A9A57" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_CH9__Patie__65370702" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_EC__Patien__2A164134" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_PD__Patien__2739D489" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_PH__Patien__3493CFA7" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_PH1__Patie__40058253" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_PH2__Patie__42E1EEFE" />
+        <AssociationConnector Association="MARSModel.FK__MP_DB_PH3__Patie__45BE5BA9" />
+        <AssociationConnector Association="MARSModel.FK__Patient__Patient__2180FB33" />
+        <AssociationConnector Association="MARSModel.FK__Record__PatientI__2DE6D218" />
+        <AssociationConnector Association="MARSModel.FK__Pdf__MedicalReco__2EDAF651" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
